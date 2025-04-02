@@ -1,6 +1,8 @@
-@use 'core/reset';
-@use 'components/code';
-@use 'components/links';
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/hero';
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/variables';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/hero';

@@ -10,12 +10,13 @@
     color: white; // Color del texto
   
     .hero__text {
-      font-size: 2rem;
-      font-weight: 700;
+      font-family: $font-main;
+      font-weight: bold;
+      font-size: 30px;
       
       p {
         margin: 0;
-        line-height: 1.2;
+        line-height: normal;
       }
     }
   }

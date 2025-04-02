@@ -1,10 +1,20 @@
-@use '../core/variables' as vars;
-
-.page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
-    color: vars.$color-secondary;
-}
+@include mobile {
+    footer {
+      background-color: #252525; 
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      .footer__p {
+        color: #676a6d;
+        font-family: $font-main, sans-serif;
+        font-weight: normal;
+        font-size: 16px; 
+        color: #676a6d;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+  

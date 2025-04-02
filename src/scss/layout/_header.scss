@@ -1,34 +1,60 @@
-// _header.scss
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #fff; /* Añadido para que el header sea visible en caso de imagen de fondo */
-
-  &__logo {
-    width: 154.5px;  /* Definir el tamaño del logo */
-    height: auto;    /* Mantener la proporción de la imagen */
+//Usando el mixin para la versión móvil (320px a 768px)
+@include mobile {
+  header {
+    background-color: #ffffff;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
   }
-
-  .menu {
-    ul {
+  .header__content{
+    width: 154px;
+    .header__logo {
+      margin-top: 10px;
+      width: 154px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .menu {
       display: flex;
-      list-style-type: none;
-      margin: 0;
+      justify-content: center;
+    }
+  
+    .menu ul {
+      list-style: none;
       padding: 0;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
     }
-
-    li {
-      margin-left: 2rem;  /* Espaciado entre los elementos del menú */
+    .menu li {
+      margin: 0;
     }
-
-    a {
+    .menu a {
       text-decoration: none;
-      color: #000;  /* Color por defecto */
-      font-weight: 500;
-      &:hover {
-        color: #007bff;  /* Color al pasar el cursor */
-      }
+      color: $fourth-color;
+      font-family: $font-main, sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin: 0 10px;
     }
   }
+  
+  }
+
+  
+
+  // Menú de navegación (enlaces de blog y contacto)
+  
+
+@include tablet {
+
+}
+
+
+@include desktop {
+  
 }
