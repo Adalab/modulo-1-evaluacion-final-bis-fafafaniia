@@ -21,15 +21,20 @@
   @include tablet {
     .hero__content {
       height: 834px;
-      display: flex;
-    }
-    .hero__text {
-      text-align: left;
-      margin-left: 30px;
-      .hero__p{
-        font-family: $font-main, sans-serif;
-        font-size: 60px;
+      .hero__text {
+        text-align: left;
+        margin-left: 30px;
+        .hero__p{
+          font-size: 60px;
+        }
       }
     }
+}
+
+@include desktop {
+  .hero__content {
+    .hero__text {
+      margin-left: 50px;
+    }
   }
-  
+}

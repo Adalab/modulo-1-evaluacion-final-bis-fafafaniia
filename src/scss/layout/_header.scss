@@ -71,5 +71,36 @@
 
 
 @include desktop {
-  
+  .header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo {
+      margin-left: 50px;
+      height: 60px;
+      width: auto;
+    }
+
+    .menu {
+      margin-right: 50px;
+      ul {
+        display: flex;
+        list-style: none;
+      }
+
+      li {
+        margin-left: 30px;
+      }
+
+      a {
+        font-family: $font-main, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #676a6d;
+        text-decoration: none;
+      }
+    }
+  }
 }
