@@ -69,6 +69,5 @@ export default defineConfig({
       input: ['src/js/main.js'], // O la ruta correcta según tu estructura
       sourcemap: true,  // Intentar habilitar sourcemaps en el plugin
     }),
-    
   ],
 });
