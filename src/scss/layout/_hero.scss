@@ -1,0 +1,22 @@
+.hero__content {
+    background-image: url('../../img/david-van-dijk-3LTht2nxd34-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; // Mantengo la altura en 400px
+    display: flex;
+    justify-content: flex-start; // Alineamos el contenido a la izquierda
+    align-items: center; // Centrado vertical del contenido
+    padding: 0 20px;
+    color: white; // Color del texto
+  
+    .hero__text {
+      font-size: 2rem;
+      font-weight: 700;
+      
+      p {
+        margin: 0;
+        line-height: 1.2;
+      }
+    }
+  }
+  
