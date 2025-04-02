@@ -2,21 +2,33 @@
     background-image: url('../../img/david-van-dijk-3LTht2nxd34-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px; // Mantengo la altura en 400px
+    height: 400px;
     display: flex;
-    justify-content: flex-start; // Alineamos el contenido a la izquierda
-    align-items: center; // Centrado vertical del contenido
+    justify-content: flex-start;
+    align-items: center;
     padding: 0 20px;
-    color: white; // Color del texto
-  
-    .hero__text {
+    color: white; 
+
+    .hero__p {
       font-family: $font-main;
       font-weight: bold;
       font-size: 30px;
-      
-      p {
-        margin: 0;
-        line-height: normal;
+      margin: 0;
+      line-height: normal;
+    }
+  }
+
+  @include tablet {
+    .hero__content {
+      height: 834px;
+      display: flex;
+    }
+    .hero__text {
+      text-align: left;
+      margin-left: 30px;
+      .hero__p{
+        font-family: $font-main, sans-serif;
+        font-size: 60px;
       }
     }
   }
