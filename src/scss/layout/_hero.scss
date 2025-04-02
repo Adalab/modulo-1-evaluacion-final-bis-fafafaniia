@@ -1,46 +1,46 @@
 .hero__content {
-    height: 100vh;
-    background-image: url('../../img/david-van-dijk-3LTht2nxd34-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 20px;
-    color: white; 
-    
-    .hero__p {
-      font-family: $font-main;
-      font-weight: bold;
-      font-size: 30px;
-      margin: 0;
-      line-height: normal;
-    }
+  height: 100vh;
+  background-image: url('../../img/david-van-dijk-3LTht2nxd34-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  color: white; 
+  
+  .hero__p {
+    font-family: $font-main;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    line-height: normal;
   }
-
-  @include tablet {
-    .hero__content {
-      height: 100vh;
-      background-size: cover;
-      .hero__text {
-        text-align: left;
-        margin-left: 30px;
-        .hero__p{
-          font-size: 60px;
-        }
-      }
-    }
 }
 
-@include desktop {
+@include tablet {
   .hero__content {
-    background-size: cover;
     height: 100vh;
+    background-size: cover;
     .hero__text {
-      margin-left: 50px;
+      text-align: left;
+      margin-left: 30px;
       .hero__p{
         font-size: 60px;
       }
     }
   }
+}
+
+@include desktop {
+.hero__content {
+  background-size: cover;
+  height: 100vh;
+  .hero__text {
+    margin-left: 50px;
+    .hero__p{
+      font-size: 60px;
+    }
+  }
+}
 }
