@@ -1,19 +1,23 @@
 footer {
-    background-color: #252525; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #252525;
     height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    z-index: 1000;
     .footer__p {
-    color: #676a6d;
-    font-family: $font-main, sans-serif;
-    font-weight: normal;
-    font-size: 16px; 
-    color: #676a6d;
-    text-align: center;
-    margin: 0;
-    }
+        font-family: $font-main, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #676a6d;
+      }
 }
+  
+  
+  
 
   
